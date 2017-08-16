@@ -1,0 +1,6 @@
+#!/user/bin/env node
+
+
+process.title = 'wap';
+
+require('../lib/wap');
