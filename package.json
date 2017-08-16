@@ -1,6 +1,6 @@
 {
   "name": "wap-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "小程序命令工具",
   "main": "index.js",
   "bin": {
