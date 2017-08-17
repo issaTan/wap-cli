@@ -2,8 +2,8 @@
 
 > 小程序 命令行工具    
 
-## 缘由：
-github 上[labrador] (https://github.com/maichong/labrador) 和 [wepy](https://github.com/wepyjs/wepy) ,两个框架已经对小程序的开发已经封装得非常优雅了，并且支持NPM 包、优化小程序API、有状态管理。
+## 缘由：
+github 上 [labrador](https://github.com/maichong/labrador) 和 [wepy](https://github.com/wepyjs/wepy) ,两个框架已经对小程序的开发已经封装得非常优雅了，并且支持NPM 包、优化小程序API、有状态管理。
 但我个人实在不太想除了小程序的API之外，再去了解一套框架的API 了。  
 我的需求很简单：
 1. 统一代码风格 
@@ -15,14 +15,14 @@ github 上[labrador] (https://github.com/maichong/labrador) 和 [wepy](https://
 
 
 ## 作用：
-1. 创建小程序项目  
+1. 创建小程序项目  
 2. 新建小程序页面
 
-## 开发流程
+## 开发流程
 1. 使用 `npm install wap-cli -g` 全局安装 `wap命令行工具`
 2. `wap create 你的项目名称` 创建项目
 3. `npm run dev` 进入开发模式
-4. 使用IDE 打开代码，使用`微信开发者工具` 打开`dist` 目录，查看效果  
+4. 使用IDE 打开代码，使用`微信开发者工具` 打开`dist` 目录，查看效果  
    - 在 `微信开发者工具` 的 `设置` - `编辑器` 中勾选`文件保存时自动编译小程序`，可实现自动刷新。**注意：**其它选项请**不要**勾选！！！
 5. 开发过程中可使用 `wap g 你的页面` 新建页面，在新建的文件中编写你的代码，保持即可看到效果    
    - 因为小程序每个页面需要4个文件，分别是 `.js`,`.json`,`.wxml`,`.wxss` 文件，直接使用 `wap g my/index` 命令，将会在 `pages` 文件夹在生成 `my`文件夹，并生成 `index.js`, `index.json`, `index.wxml`, `index.less` 文件；并且会在 `app.json` 的`pages`自动添加文件路径。
@@ -30,10 +30,10 @@ github 上[labrador] (https://github.com/maichong/labrador) 和 [wepy](https://
    - `npm run build` 与 `npm run dev` 的区别在于，`build` 命令会压缩代码量  
 
 
-## 微信开发者工具
+## 微信开发者工具
 项目初始化后用 IDE打开项目根目录。  
 安装完依赖后使用 `npm run dev` ，然后打开`微信web开发者工具`新建项目，本地开发目录选择 `dist`目标目录。
-请**务必**先进行 `npm run dev` 命令后再打开`微信开发者工具`。
+请**务必**先进行 `npm run dev` 命令后再打开`微信开发者工具`。
 
 ## 注意事项：
 1. `微信开发者工具`中 `项目` 栏取消勾选 `开启ES6 转ES5`、`开启代码压缩上传`，因为`wap`都做了这些事件，让`微信开发者工具` 重复操作可能会导致不可预知的错误！！
