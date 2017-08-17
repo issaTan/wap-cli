@@ -1,7 +1,17 @@
 # wap-cli
 
-> 小程序 命令行工具
-如果你想使用对小程序 API 进行了封装、支持NPM 包、有状态管理 的框架，推荐使用 [labrador] (https://github.com/maichong/labrador) 或 [wepy](https://github.com/wepyjs/wepy) ,它们封装得非常优雅。当然除了小程序本身的API，你可能还需要学习一下它们的API。
+> 小程序 命令行工具    
+
+## 缘由：
+github 上[labrador] (https://github.com/maichong/labrador) 和 [wepy](https://github.com/wepyjs/wepy) ,两个框架已经对小程序的开发已经封装得非常优雅了，并且支持NPM 包、优化小程序API、有状态管理。
+但我个人实在不太想除了小程序的API之外，再去了解一套框架的API 了。  
+我的需求很简单：
+1. 统一代码风格 
+2. 编译前检查可能存在的错误  
+3. 样式文件可使用变量  
+4. 样式文件引用的图片可自动base64化
+5. 可配置忽略一些文件，不交给开发者工具打包  
+所以自己实现了这么一套，因为还是自用，可配置的东西不多。需要更高的自定义化，推荐使用上面两个库，或者自己`fork`一份修改吧。  
 
 
 ## 作用：
