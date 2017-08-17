@@ -24,6 +24,9 @@ module.exports = {
         "no-prototype-builtins": 0,
         "import/no-extraneous-dependencies": 1,
         "radix": 0,
-        "global-require": 0
+        "global-require": 0,
+        "guard-for-in": 0,
+        "no-restricted-syntax": 0,
+        "no-useless-escape": 0
     }
 };
