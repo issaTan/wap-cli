@@ -23,6 +23,7 @@ module.exports = {
         "class-methods-use-this": 1,
         "no-prototype-builtins": 0,
         "import/no-extraneous-dependencies": 1,
-        "radix": 0
+        "radix": 0,
+        "global-require": 0
     }
 };

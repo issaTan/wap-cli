@@ -1,7 +1,7 @@
 # wap-cli
 
 小程序 命令行
-推荐使用[wepy](https://github.com/wepyjs/wepy) 和 [labrador] (https://github.com/maichong/labrador) ,这两个库已经封装得非常优雅了！
+推荐使用 [labrador] (https://github.com/maichong/labrador) 或 [wepy](https://github.com/wepyjs/wepy) ,这两个库已经封装得非常优雅了！
 
 ## 作用：
 新建小程序demo
